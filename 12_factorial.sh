@@ -1,0 +1,33 @@
+#!/bin/bash
+
+read -p "Enter a number: " num
+
+
+fact=1
+
+
+for ((i=1; i<=num; i++)); do
+    fact=$((fact * i))
+done
+
+
+echo "Factorial of $num is: $fact"
+
+----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+
+#!/bin/bash
+
+read -p "Enter a number: " num
+
+
+fact=1
+
+
+while [ $num -gt 1 ]; do
+    fact=$((fact * num)) 
+    num=$((num - 1))     
+done
+
+
+echo "Factorial is: $fact"
